@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-fawk
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0068-tenant/tkrw-pr712-0075-0068-app/devfile-sample-fawk@sha256:fa3f4508860997eb8197192146966329eee50465096e0bcfc23eefe978aaef85
+        name: my-nodejs
+        resources: {}
+status: {}
